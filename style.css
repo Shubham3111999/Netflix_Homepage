@@ -1,0 +1,300 @@
+body{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: black;
+    color: white;
+}
+
+img{
+    max-width: 100%;            /* add this to you code*/
+}
+
+header{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ padding: 26px 56px;
+ position: absolute; 
+ z-index: 5;
+ width: 100%;
+}
+
+header a.logo{
+    display: block;
+}
+
+header .logo svg{
+    fill: #e50914;
+    height: 37px;
+    
+}
+
+header div+div{
+    text-align: right;
+}
+
+header a.button{
+    display: inline-block;
+    background-color:#e50914;
+    color: aliceblue;
+    padding: 7px 17px;
+    border-radius: 3px;
+}
+
+header select{
+    background: transparent;      /* Language selection*/
+    color: white;
+    padding: 7px 17px;
+}
+header div.select{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+header div.select svg{
+    height: 20px;                     /* world logo*/
+    fill: white;
+    position: absolute;
+    margin-top: 7px;
+    margin-right: 5px;
+    margin-left: 2px;
+}
+
+div.splash {
+    position: relative;
+}
+
+div.splash div.gradient{
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    
+    position: absolute;
+    inset: 0;
+}
+
+div.splash div.background img{
+    max-width: 100%;
+    opacity: 0.6;
+}
+
+div.splash div.content {
+    max-width: 655px;
+    
+    position:absolute;
+    inset:0;
+    left: 50%;
+    margin-left: -327.5px;
+    
+    display:grid;
+    align-items: center;
+    text-align: center;
+}
+
+div.splash h1, div.splash h2, div.splash h3{
+    font-weight: normal;
+}
+
+div.splash h1{
+    font-size: 3.125rem;
+    font-weight: bold;
+}
+
+div.splash h2{
+    font-size: 1.625rem;
+    margin-top: 13px;
+    margin-bottom: 29px;
+}
+
+div.splash h3{
+    font-size: 1.2rem;
+}
+
+div.splash form{
+    position: relative;
+    display:grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr max-content;
+}
+
+div.splash input{
+    padding: 15px 10px;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+div.splash input ~ span{
+    position: absolute;
+    z-index: 3;
+    color: rgba(0, 0, 0, 0.425);
+    left: 12px;
+    top: 19px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+div.splash input:focus{
+    padding-top: 19px;
+    padding-bottom: 11px;
+}
+
+div.splash input:focus ~ span{
+    top: 4px;
+    font-size: .8rem;
+}
+
+div.splash button{
+    font-size: 1.625rem;
+    padding: 12px 26px;
+    background-color: red;
+    color: white;
+    border:0px
+}
+
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 46px;
+    padding: 70px 35px;
+    align-items: center;
+    border-top: 8px solid #222;
+    
+}
+
+section.last{
+    border-bottom: 8px solid #222;
+}
+
+section div.texts h1{
+    font-size: 3.125rem;
+    margin-bottom: 8px;
+}
+
+section div.texts p {
+    font-size: 1.625rem;
+}
+
+.media{
+    position: relative;
+    margin-left: 75px;
+}
+
+ .media.s1 img{
+    width: 402px;
+    z-index: 3;
+    position: relative;
+
+}
+
+ .media.s1 video{
+    width: 293px;
+    position: absolute;
+    left: 53px;
+    top: 62px;
+    
+   
+}
+
+section:nth-child(even) div.texts{
+    order:2;
+
+}
+
+section div.download{
+     border: 2px solid rgba(136, 136, 136, 0.935);
+     border-radius: 15px;
+     padding:10px;
+     height: 75px;
+     display: grid;
+     text-align: center;
+     align-items: center;
+     position: absolute;
+     bottom: 30px;
+     
+     width: 350px;
+     left: 50%;
+     margin-left: -185px;
+     gap: 20px;
+     background-color: black;
+     grid-template-columns: max-content 1fr max-content;   
+}
+
+
+
+section div.download img{
+    height: 75px;
+    width: auto;
+}
+
+
+
+.media.s3 img{
+    width: 402px;
+    position: relative;
+    z-index: 3;
+
+}
+
+ .media.s3 video{
+    width: 250px;
+    position: absolute;
+    left: 72px;
+    top: 36px;
+   
+}
+
+div.faq{
+    padding: 70px 30px;
+}
+
+div.faq h1{
+    font-size: 3.124rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+div.questions{
+    max-width: 635px;
+    margin: 0 auto;
+    font-size: 1.625rem;
+}
+
+div.question{
+    position: relative;
+    background-color: #303030;
+    margin-bottom: 10px;
+}
+
+div.question svg{
+    height: 30px;
+    width: 30px;
+    right: 30px;
+    top: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: all 0.2s ease;
+}
+
+div.question .header{
+    display: block;
+    padding: 20px 30px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+
+div.question div.answer{
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+div.question input[type="checkbox"]{
+    display: none;
+}
+
+div.question input[type="checkbox"]:checked ~ div.answer{
+    padding: 30px 30px;
+    max-height: 600px;
+}
+
+div.question input[type="checkbox"]:checked ~ .header svg{
+    transform: rotate(90deg);
+}
